@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ionic Native
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" class="grid">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label>Flash</ion-label>
+            <ion-toggle slot="start" name="blueberry" unchecked (click)="flash()" ></ion-toggle>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="vibrate()">Vibrate</ion-button>
+        </ion-col>
+        
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="takephoto()">Photo</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="getGeo()">Geo</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card>            
+           <ion-img src= "https://i.pinimg.com/originals/a0/d1/8e/a0d18e9b77d9121b28034b1319033cbb.jpg"></ion-img>
+           <ion-title>Latitude</ion-title>
+           <ion-card-content> {{ lat }} </ion-card-content>
+          </ion-card>          
+        </ion-col>
+        <ion-col>
+          <ion-card>            
+            <ion-img src= "https://i.pinimg.com/originals/a0/d1/8e/a0d18e9b77d9121b28034b1319033cbb.jpg"></ion-img>
+            <ion-title>Longitude</ion-title>
+            <ion-card-content> {{ long }} </ion-card-content>
+           </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+
+    
+   
+  
+  </div>
+  <img src="{{ myphoto }}">
+  <ion-img src="{{ myphoto }}"></ion-img>
+</ion-content>

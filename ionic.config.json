@@ -1,0 +1,8 @@
+{
+  "name": "vibrate",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
